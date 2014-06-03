@@ -1,14 +1,23 @@
 
 body{
 background-color: black;
-background-image:url(http://static.tumblr.com/dcslupi/WFzmqcrf7/background.jpg); //provisório
-font-family:Comic Sans MS;
-font-size: 50pt;
+background-image:url(http://static.tumblr.com/dcslupi/WFzmqcrf7/background.jpg);
+font-family:Arial;
+font-size: 18pt;
 color: red;
 text-align: center;
 } 
+
+#cabeçalho div{
+font-family:Arial;
+font-size: 18pt;
+color: red;
+
+}
+
+
 #loginuser {
-font-family:Comic Sans MS;
+font-family:Arial;
 font-size: 14pt;
 color: red;
 text-align: center;
@@ -22,7 +31,7 @@ text-align:center;
 }
 
 #titulo ul{
-font-family:Comic Sans MS;
+font-family:Arial;
 font-size: 50pt;
 color: red;
 text-align: center;
@@ -93,4 +102,8 @@ body > ul > li:hover > ul{
 -moz-opacity: 1;
 opacity: 1;
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+
+h1{
+text-align: center;
 }

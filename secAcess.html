@@ -1,3 +1,7 @@
+<?php 
+include 'db.php'
+?>
+
 <html>
 <LINK REL="STYLESHEET"HREF="estilo.css" TYPE="text/css"> 
 <head>
@@ -5,15 +9,16 @@
 <Title> SEC ACESS </title></div>
 <body>
 <h1>
-<form name ="login" method= "post" action = "valida.php">
+
 <ul id ="titulo"><div> <HR>SEC ACESS !</div><HR></ul>
 	<div id ="loginuser">
-<table> <TD>Bem - Vindo !</TD> </table>
+<table> <h1><TD>Bem - Vindo !</TD> <h1></table>
 		<TABLE>
+		<form name="loginform" method="post" action="autenticar.php">
 			<tr><TD>Login</TD>
-				<td><input name="login" type="text" id="login">	</td></tr>
+				<td><input name="login" type="text" placeholder="login"></td></tr>
 					<TR><td>Senha:</td>
-					<td><input name="senha" type="password" id="senha"></td></TR>
+					<td><input name="senha" type="password" placeholder="senha"></td></TR>
 
 <TR>
  <td>
