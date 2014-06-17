@@ -29,7 +29,7 @@ $matricula = $_POST['matricula'];
 
 	if($usuario_Nivel == $morador){
 echo "<TABLE border=2>";
-echo "<form action='inserir_usuario1.php' method='post'>";
+echo "<form action='$insere' method='post'>";
 echo "<TABLE>";
 echo "<TR><TD><INPUT name='id_Usuario' type='hidden' size=30></TD></TR>";
 echo "<TR><TD>Nome: </TD> <TD><INPUT name='nome' type='text' size=30> *</TD></TR>";
@@ -40,10 +40,10 @@ echo "<TR><TD>Telefone: </TD> <TD><INPUT name='telefone' type='text' size=30> *<
 echo "<TR><TD>E-mail: </TD> <TD><INPUT name='email' type='text' size=30> *</TD></TR>";
 echo "<TR><TD>Abrir foto: </TD> <TD><INPUT name='status' type='text' size=30> *</TD></TR>"; //ver como colocar a foto
 echo "<TR><TD>Status: </TD> <TD><INPUT name='status' type='text' size=30> *</TD></TR>";
-
-if($veiculo == sim) //checkbox
+}
+if($veiculo == sim){ //checkbox
 echo "<TABLE border=2>";
-echo "<form action='inserir_usuario1.php' method='post'>";
+echo "<form action='$insere' method='post'>";
 echo "<TABLE>";
 echo "<TR><TD>Placa: </TD> <TD><INPUT name='placa' type='text' size=30> *</TD></TR>";
 echo "<TR><TD>Modelo: </TD> <TD><INPUT name='modelo' type='text' size=30> *</TD></TR>";
@@ -62,18 +62,18 @@ if (!$res) {
 echo "<H1> Cadastro do usuário inserido com sucesso</H1>";
 
 
-}
-	else {
+}else {
 	if($usuario_Nivel == $visitante)
 		if($usuario_Nivel = $visitante)
 echo "<TABLE border=2>";
-echo "<form action='inserir_usuario1.php' method='post'>";
+echo "<form action='$insere' method='post'>";
 echo "<TABLE>";
 echo "<TR><TD><INPUT name='id_Usuario' type='hidden' size=30></TD></TR>";
 echo "<TR><TD>Nome: </TD> <TD><INPUT name='nome' type='text' size=30> *</TD></TR>";
 echo "<TR><TD>RG: </TD> <TD><INPUT name='rg' type='text' size=30> *</TD></TR>";
 echo "<TR><TD>Abrir foto: </TD> <TD><INPUT name='status' type='text' size=30> *</TD></TR>"; //ver como colocar a foto
 echo "<TR><TD></TD><TD><INPUT class='botao' type='submit' value='Cadastrar'></TD></TR>";
+ 
 $insere = "INSERT INTO usuario(id_Usuario, nome, rg, cpf, telefone, email, moradia, status, placa, modelo, cor) VALUES ('$id','$nome', '$rg', '$cpf', 
 '$telefone', '$email', '$foto', '$moradia', '$status', '$modelo', '$placa', '$cor')"; 
 $res = mysql_query($insere);

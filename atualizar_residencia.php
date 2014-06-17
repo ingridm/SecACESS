@@ -31,7 +31,7 @@ while ($dados = mysql_fetch_array($res)) {
 	echo "<TD>{$dados['moradores']}";//puxa do cadastro de usuários
 	echo "<TD>{$dados['telefone']}";
 	echo "<TD> <A href='atualizar_residencia1.php?id=$id'> Atualizar </A><BR>";
-	else{ //se for apartamento
+	}
 	echo "<TABLE border=2>";
 	echo "<TH>ID<TH>Número<TH>Andar<TH>STATUS<TH>Morador TITULAR<TH>MORADORES<TH>Telefone</TH>";
 while ($dados = mysql_fetch_array($res)) {

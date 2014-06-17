@@ -10,12 +10,15 @@
 echo "<HR> <BR>";
 echo "<h1>Cadastro de Novo Usuário</h1>"; 
 echo "<h1>Selecione o tipo de usuário que será cadastrado</h1>";
+echo "<input type='radio' name='morador' value='morador'/>Morador<br/>";
+echo "<input type='radio' name='visitante' value='visitante'/>Visitante<br/>";
+echo "<input type='radio' name='profissional' value='profissional' />Profissional<br/><br/>";
+echo "<input type='submit' value='Enviar'/>";
 echo "<form method='post' action='inserir_usuario1.php'>";
-echo "<input type='radio' name='usuario_Nivel' value='morador'/>Morador<br/>"
-echo "<input type='radio' name='usuario_Nivel' value='visitante' />Visitante<br /><br/>"
-echo "<input type='radio' name='usuario_Nivel' value='profissional' />Profissional<br /><br/>"
-echo "<input type='submit' value='Enviar'/>"
-echo "</form>"
+echo "</form>";
+
+
+/*
 	if($usuario_Nivel == $morador)
 echo "<TABLE border=2>";
 echo "<form action='inserir_pessoa1.php' method='post'>";
@@ -70,7 +73,7 @@ echo "<TR><TD>Cor: </TD> <TD><INPUT name='cor' type='text' size=30> *</TD></TR>"
 echo "<TR><TD>Status </TD> <TD><INPUT name='status' type='text' size=30> *</TD></TR>";
 echo "</TABLE>";
 echo "</FORM>";
-}
-?>
+} // */
+?> 
 </BODY>
 </HTML>
