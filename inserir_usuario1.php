@@ -43,8 +43,8 @@ echo "<TR><TD>Status: </TD> <TD><INPUT name='status' type='text' size=30> *</TD>
 
 echo "<h1>O usuário possui veículo:</h1>";
 echo "<form method='post' action='$insere.php'>";
-echo "<input type='radio' name='veiculo' value='Sim' />Sim<br/>"
-echo "<input type='radio' name='veiculo' value='Não' />Não<br /><br/>"
+echo "<input type='radio' name='$veiculo' value='sim'/>Sim<br/>"
+echo "<input type='radio' name='veiculo' value='$nao'/>Não<br/>"
 echo "<input type='submit' value='Enviar'/>"
 echo "</form>"
 
@@ -136,8 +136,8 @@ echo "<TR><TD>Status: </TD> <TD><INPUT name='status' type='text' size=30> *</TD>
 
 echo "<h1>O usuário possui veículo:</h1>";
 echo "<form method='post' action='inserir_usuario1.php'>";
-echo "<input type='radio' name='veiculo' value='Sim' />Sim<br/>"
-echo "<input type='radio' name='veiculo' value='Não' />Não<br /><br/>"
+echo "<input type='radio' name='veiculo' value='sim' />Sim<br/>"
+echo "<input type='radio' name='veiculo' value='não' />Não<br /><br/>"
 echo "<input type='submit' value='Enviar'/>"
 echo "</form>"
 
