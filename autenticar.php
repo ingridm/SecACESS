@@ -27,7 +27,7 @@
 <?php 
 	$login=$_POST['login'];
 	$senha=$_POST['senha'];
-	$sql = mysql_query("SELECT * FROM pessoa WHERE login = '$login' and senha = '$senha'") or die(mysql_error());
+	$sql = mysql_query("SELECT * FROM usuario WHERE login = '$login' and senha = '$senha'") or die(mysql_error());
 	$row = mysql_num_rows($sql);
 	
 		if($row > 0) {
