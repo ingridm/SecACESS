@@ -15,7 +15,7 @@
 	
 		<script type="text/javascript" >
 		function loginsuccessfully() {
-		setTimeout("window.location='menu.html' ", 1000);
+		setTimeout("window.location='inicial.php' ", 1000);
 	}
 	function loginfailed(){
 		setTimeout("window.location='secAcess.html' ", 1000);
