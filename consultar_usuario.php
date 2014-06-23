@@ -15,7 +15,7 @@ $res = mysql_query($consulta);
 echo "<HR> <BR>";
 echo "<h1>Consultar Usuários Cadastrados<h1>"; 
 echo "<TABLE border=2>";
-echo "<TH>ID<TH>Nome<TH>RG<TH>CPF<TH>Telefone<TH>E-mail<TH>Abrir Foto<TH>Moradia<TH>Status<TH>Veículo"; //em veículo abrir outro   para ver as infos do veiculo
+echo "<TH>ID<TH>Nome<TH>RG<TH>CPF<TH>Telefone<TH>E-mail<TH>Abrir Foto<TH>Moradia<TH>Status Usuario<TH>"; //em veículo abrir outro   para ver as infos do veiculo
 while ($dados = mysql_fetch_array($res)) {
 	echo "<TR>";
 	echo "<TD>{$dados['id_Usuario']}";
@@ -26,11 +26,11 @@ while ($dados = mysql_fetch_array($res)) {
 	echo "<TD>{$dados['email']}";
 	echo "<TD>{$dados['foto']}";
 	echo "<TD>{$dados['moradia']}";
-	echo "<TD>{$dados['status_Usuario']}";
-	echo "<TD>{$dados['placa']}";
-	echo "<TD>{$dados['modelo']}";
-	echo "<TD>{$dados['cor']}";
-	echo "<TD>{$dados['status_Veiculo']}";
+	echo "<TD>{$dados['status']}";
+	//echo "<TD>{$dados['placa']}";
+	//echo "<TD>{$dados['modelo']}";
+	//echo "<TD>{$dados['cor']}";
+	//echo "<TD>{$dados['status_Veiculo']}";
 	echo "</TR>";
 };
 echo "</TABLE>";
