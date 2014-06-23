@@ -8,7 +8,7 @@
 <?php
 include 'db.php';
 
-$consulta = "select * FROM usuario";
+$consulta = "select * FROM residencia";
 $res = mysql_query($consulta);
 
 //$sql = "DELETE FROM residencia WHERE nome='id'"; 
@@ -27,7 +27,7 @@ while ($dados = mysql_fetch_array($res)) {
 	echo "<TD>{$dados['morador_Titular']}";
 	echo "<TD>{$dados['moradores']}";
 	
-	echo "<TD> <A href='excluir_residencia1.php?id=$id'>Excluir</A><BR>";
+	echo "<TD> <A href='excluir_residencia1.php'>Excluir</A><BR>";
 	echo "</TR>";
 };
 echo "</TABLE>";

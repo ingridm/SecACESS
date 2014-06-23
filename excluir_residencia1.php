@@ -9,9 +9,9 @@
 <?php
 include 'db.php';
    
-$id = $_POST['id_Residencia'];
+$id = $_GET['id_Residencia'];
 
-$sql = "DELETE FROM usuario WHERE id_Residencia ='$id'"; 
+$sql = "DELETE FROM residencia WHERE id_Residencia ='$id'"; 
 $res = mysql_query($sql);
 if (!$res) {
 	echo "Falhou a consulta";

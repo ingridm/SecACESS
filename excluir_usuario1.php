@@ -9,7 +9,7 @@
 <?php
 include 'db.php';
    
-$id = $_POST['id_Usuario'];
+$id = $_GET['id_Usuario'];
 
 $sql = "DELETE FROM usuario WHERE id_Usuario ='$id'"; 
 $res = mysql_query($sql);
@@ -23,3 +23,4 @@ mysql_close($conexao);
 
 </BODY>
 </HTML>
+
