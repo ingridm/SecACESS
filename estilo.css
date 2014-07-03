@@ -39,6 +39,10 @@ left : 100px;
 top : 200px;
 
 } 
+#formulariomaiores{
+$("#meuelemento").css("display", "none");
+$("#meuelemento").css("display", "block");
+} 	
 
 a{
 text-decoration: none;
